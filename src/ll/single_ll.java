@@ -42,6 +42,28 @@ public class single_ll
 		
 		
 	}
+	void deleteDuplicates() 
+	{
+		if(head==null)
+			return;
+		Node j=head;
+		while(j.nxt!=null) 
+		{
+			if(j.data==)
+		}
+		
+	}
+	void deleteByValue(int val) 
+	{
+		if(head.data==val)
+		{head=head.nxt;}
+		Node m=head;
+		while(m.nxt!=null && m.nxt.nxt.data==val) 
+		{
+			m=m.nxt;
+		}
+		m.nxt=m.nxt.nxt;
+	}
 	void deleteAtgivenpos(int d) 
 	{
 		if(d==size/2) 
@@ -136,11 +158,15 @@ public class single_ll
 	public static void main(String[] args) 
 	{
 		single_ll ll=new single_ll();
+		ll.insert(10);
+		ll.insert(11);
+		ll.insert(12);
 		ll.insert(12);
 		ll.insert(13);
+		
 		ll.insert(14);
 		ll.insert(15);
-		ll.delete()  ;
+		//ll.deleteByValue(13);
 		//ll.insertatfirst(0);
 		//ll.insertAtGivenPos(11,0);
 		ll.disp();
